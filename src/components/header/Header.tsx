@@ -1,5 +1,5 @@
 import React from 'react';
-import imageHeader from './ejemplo.jpg'
+import imageHeader from './Servicios.jpg'
 import './Header.module.css'
 
 function Header() {
