@@ -2,26 +2,23 @@ import React from 'react';
 
 import './App.css';
 
-import Footer from './components/footer/Footer';
+import Menu from './components/menu/Menu';
 import Header from './components/header/Header';
-import ItemPrimary from './components/item-primary/ItemPrimary';
+import Footer from './components/footer/Footer';
 
 import SectionPrincipal from './components/section-principal/SectionPrincipal';
 import SectionSecundary from './components/section-secundary/SectionSecundary';
 
 interface AppProps{
-
   contactName: string;
   email: string;
   year: number;
-  
-}
+};
 
 function App({contactName,year, email}: AppProps) {
-
   return (
     <div className="App">
-      <ItemPrimary/>
+      <Menu />
       <Header/>
       <SectionPrincipal/>
       <SectionSecundary/>
