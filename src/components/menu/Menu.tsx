@@ -12,7 +12,7 @@ export default function Menu() {
                     <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li className="nav-item"><a className="nav-link active" aria-current="page" href="#section-principal">Audio</a></li>
                         <li className="nav-item"><a className="nav-link" href="#section-secundary">Guitar Tech</a></li>
-                        <li className="nav-item"><a className="nav-link" href="#contacto">Contacto</a></li>
+                        <li className="nav-item"><a className="nav-link" href="#section-contact">Contacto</a></li>
                     </ul>
                 </div>
             </div>
