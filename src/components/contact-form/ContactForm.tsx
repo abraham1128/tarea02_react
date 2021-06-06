@@ -26,17 +26,36 @@ export default function ContactForm() {
     };
 
     return (
-    <form onSubmit={handleSubmit}>
-        <label htmlFor="Nombre">Nombre</label>
-        <input id="Nombre" name="Nombre" type="text" onChange={handleInput} required />
+        <section id="section-contact" className="container text-start">
+            <h2>Contacto</h2>
+            <form onSubmit={handleSubmit}>
+                <div className="row">
+                    <div className="col-xs-12 col-sm-8 mb-3">
+                        <label htmlFor="Nombre" className="form-label">Nombre</label>
+                        <input id="Nombre" name="Nombre" type="text" className="form-control" onChange={handleInput} required />
+                    </div>
+                </div>
 
-        <label htmlFor="Correo">Correo Electronico</label>
-        <input id="Correo" name="Correo" type="email" onChange={handleInput} required />
+                <div className="row">
+                    <div className="col-xs-12 col-sm-8 mb-3">
+                        <label htmlFor="Correo" className="form-label">Correo Electronico</label>
+                        <input id="Correo" name="Correo" type="email" className="form-control" onChange={handleInput} required />
+                    </div>
+                </div>
 
-        <label htmlFor="Mensaje">Mensaje</label>
-        <textarea id="Mensaje" name="Mensaje" onChange={handleInput}></textarea>
+                <div className="row">
+                    <div className="col-xs-12 col-sm-8 mb-3">
+                        <label htmlFor="Mensaje" className="form-label">Mensaje</label>
+                        <textarea id="Mensaje" name="Mensaje" className="form-control" onChange={handleInput}></textarea>
+                    </div>
+                </div>
 
-        <input type="submit" value="Enviar" />
-    </form>
+                <div className="row">
+                    <div className="col-xs-12 col-sm-8 mb-3">
+                        <input type="submit" className="btn btn-primary" value="Enviar" />
+                    </div>
+                </div>
+            </form>
+        </section>
     );
 };
