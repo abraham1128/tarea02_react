@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './App.css';
 
@@ -8,6 +8,7 @@ import Footer from './components/footer/Footer';
 
 import SectionPrincipal from './components/section-principal/SectionPrincipal';
 import SectionSecundary from './components/section-secundary/SectionSecundary';
+import ContactForm from './components/contact-form/ContactForm';
 
 interface AppProps{
   contactName: string;
@@ -22,6 +23,7 @@ function App({contactName,year, email}: AppProps) {
       <Header/>
       <SectionPrincipal/>
       <SectionSecundary/>
+      <ContactForm />
       <Footer contactName = {contactName}  year={year}  email={email}/>
     </div>
   );
